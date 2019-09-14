@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SignUpForm: View {
+public struct SignUpForm: View {
   
   @ObservedObject var model = SignUpFormModel()
 
@@ -9,7 +9,7 @@ struct SignUpForm: View {
   @State var signUpDisabled = true
   @State var alertShown = false
 
-  var body: some View {
+  public var body: some View {
     NavigationView {
       VStack {
         Spacer()
