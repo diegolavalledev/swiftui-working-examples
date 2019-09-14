@@ -3,21 +3,29 @@ import SwiftUI
 struct AllRise: View {
   
   @State var textFieldValue = ""
+
   @ObservedObject var keyboardProps = KeyboardProperties.shared
+  
+  var kbHeight: CGFloat {
+    keyboardProps.frame.height
+  }
 
   var body: some View {
     VStack(alignment: .leading) {
-      Text("We monitor the state of the software keyboard. When it comes up, we react by shifting our entire view upwards.")
+      Text("We monitor the state of the software keyboard. When it comes up, we react by shifting the text field upwards.")
       Spacer().fixedSize()
-      Text("Current keyboard height: ").italic() + Text("\(keyboardProps.height, specifier: "%.2f")")
+      Text("Current keyboard height: ").italic() + Text("\(kbHeight, specifier: "%.2f")")
       Spacer()
-      Text("The following field would otherwise be covered by the software keyboard coming up.")
-      TextField("Enter some text", text: self.$textFieldValue)
-      .textFieldStyle(RoundedBorderTextFieldStyle())
+
+      Group {
+        Text("The following field would otherwise be covered by the software keyboard coming up.")
+        TextField("Enter some text", text: self.$textFieldValue)
+        .textFieldStyle(RoundedBorderTextFieldStyle())
+      }
+      .offset(y: -kbHeight)
+      .animation(.easeIn(duration: 0.2))
     }
     .padding()
-    .offset(y: -keyboardProps.height)
-    .animation(.easeIn(duration: 0.2))
   }
 }
 
