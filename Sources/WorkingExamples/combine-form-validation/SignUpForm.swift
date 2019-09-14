@@ -9,6 +9,12 @@ public struct SignUpForm: View {
   @State var signUpDisabled = true
   @State var alertShown = false
 
+  public init() { }
+  
+  public init(usernameAvailable: Bool) {
+    self.usernameAvailable = usernameAvailable
+  }
+
   public var body: some View {
     NavigationView {
       VStack {

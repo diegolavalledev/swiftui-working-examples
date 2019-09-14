@@ -50,6 +50,8 @@ public struct PlaneMoonScene: View {
     .padding()
   }
 
+  public init() { }
+
   public var body: some View {
     VStack {
       ZStack(alignment: .bottomLeading) {
