@@ -1,0 +1,7 @@
+.DS_Store
+/.swiftpm/xcode/package.xcworkspace/xcuserdata
+/.swiftpm/xcode/xcuserdata
+/sandbox.xcodeproj/xcuserdata
+/sandbox.xcodeproj/project.xcworkspace/xcuserdata
+/build
+gitconfig.user
