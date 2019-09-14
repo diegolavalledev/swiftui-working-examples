@@ -32,7 +32,6 @@
 		624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneMoonScene.swift; sourceTree = "<group>"; };
 		624ECD4F23F6E16B0068D139 /* FlyModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyModifier.swift; sourceTree = "<group>"; };
 		624ECD5023F6E16B0068D139 /* ImprovedPlaneMoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprovedPlaneMoonScene.swift; sourceTree = "<group>"; };
-		6253CF1F23FEA9F900538F8C /* JumpingTitleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingTitleBar.swift; sourceTree = "<group>"; };
 		62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpingTitleBar.swift; sourceTree = "<group>"; };
 		62DE9DDD23F6BD6600E568BD /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		62DE9DE323F6BF0400E568BD /* WorkingExamples-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorkingExamples-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +60,6 @@
 		621D026C2369BD6C00F57121 /* WorkingExamples */ = {
 			isa = PBXGroup;
 			children = (
-				6253CF1E23FEA9D900538F8C /* no-uiimage */,
 				624ECD4D23F6E16B0068D139 /* animation-ended */,
 				624ECD4A23F6E16B0068D139 /* combine-form-validation */,
 				62BD729E23FD76D000D02AF0 /* scroll-magic */,
@@ -118,14 +116,6 @@
 				624ECD5023F6E16B0068D139 /* ImprovedPlaneMoonScene.swift */,
 			);
 			path = "animation-ended";
-			sourceTree = "<group>";
-		};
-		6253CF1E23FEA9D900538F8C /* no-uiimage */ = {
-			isa = PBXGroup;
-			children = (
-				6253CF1F23FEA9F900538F8C /* JumpingTitleBar.swift */,
-			);
-			path = "no-uiimage";
 			sourceTree = "<group>";
 		};
 		62951A3223F6C41E0037C2EB /* macOS */ = {
