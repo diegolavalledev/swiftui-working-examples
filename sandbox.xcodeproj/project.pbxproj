@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		62007EB423FD90E0006EB17B /* ScrollMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */; };
+		620F013824601B1300D62706 /* KeyboardProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F013124601B1300D62706 /* KeyboardProperties.swift */; };
+		620F013A24601B1300D62706 /* AllRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F013324601B1300D62706 /* AllRise.swift */; };
 		624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4B23F6E16B0068D139 /* FakeSignup.swift */; };
 		624ECD5323F6E16B0068D139 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */; };
 		624ECD5523F6E16B0068D139 /* PlaneMoonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		620F013124601B1300D62706 /* KeyboardProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardProperties.swift; sourceTree = "<group>"; };
+		620F013324601B1300D62706 /* AllRise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRise.swift; sourceTree = "<group>"; };
 		624371162358A5040037B9BC /* WorkingExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624ECD4B23F6E16B0068D139 /* FakeSignup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSignup.swift; sourceTree = "<group>"; };
 		624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFormModel.swift; sourceTree = "<group>"; };
@@ -63,10 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620F012F24601B1300D62706 /* all-rise */ = {
+			isa = PBXGroup;
+			children = (
+				620F013124601B1300D62706 /* KeyboardProperties.swift */,
+				620F013324601B1300D62706 /* AllRise.swift */,
+			);
+			path = "all-rise";
+			sourceTree = "<group>";
+		};
 		621D026C2369BD6C00F57121 /* WorkingExamples */ = {
 			isa = PBXGroup;
 			children = (
 				62E7011E24221EA600136837 /* Example.swift */,
+				620F012F24601B1300D62706 /* all-rise */,
 				624ECD4A23F6E16B0068D139 /* fake-signup */,
 				624ECD4D23F6E16B0068D139 /* moonshot */,
 				62BD729E23FD76D000D02AF0 /* scroll-magic */,
@@ -260,10 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620F013A24601B1300D62706 /* AllRise.swift in Sources */,
 				62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */,
 				6285E1AA24239BE3008A27B1 /* LandmarkModel.swift in Sources */,
 				624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */,
 				62D23674240846AB007F9AD8 /* ContentView.swift in Sources */,
+				620F013824601B1300D62706 /* KeyboardProperties.swift in Sources */,
 				624ECD5923F6E16B0068D139 /* Moonshot.swift in Sources */,
 				6285E1A924239BE3008A27B1 /* RealtimeJson.swift in Sources */,
 				624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */,
