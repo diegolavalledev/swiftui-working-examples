@@ -23,6 +23,12 @@ public struct Example: Identifiable, CustomStringConvertible {
     self.view = AnyView(view)
   }
   
+#if os(macOS)
+  public static var byKey: KeyValuePairs = [
+    Key.toggles: Example(.toggles, view: Toggles()),
+  ]
+#endif
+#if os(iOS)
   public static var byKey: KeyValuePairs = [
     Key.moonshot: Example(.moonshot, view: Moonshot()),
     Key.fakeSignup: Example(.fakeSignup, view: FakeSignup()),
@@ -31,7 +37,8 @@ public struct Example: Identifiable, CustomStringConvertible {
     Key.allRise: Example(.allRise, view: AllRise()),
     Key.toggles: Example(.toggles, view: Toggles()),
   ]
-  
+#endif
+
   public static func withPermalink(_ permalink: String) -> Self? {
     guard
       let key = Key.init(rawValue: permalink),

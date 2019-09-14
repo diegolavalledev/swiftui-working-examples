@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62007EB423FD90E0006EB17B /* ScrollMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */; };
+		620C4B4124754A1A00CF52D7 /* PlaneMoonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */; };
+		620C4B4224754A1A00CF52D7 /* FlyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4F23F6E16B0068D139 /* FlyModifier.swift */; };
+		620C4B4324754A1A00CF52D7 /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD5023F6E16B0068D139 /* Moonshot.swift */; };
+		620C4B4924754A6800CF52D7 /* LandmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6285E1A824239BE3008A27B1 /* LandmarkModel.swift */; };
 		620F013824601B1300D62706 /* KeyboardProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F013124601B1300D62706 /* KeyboardProperties.swift */; };
 		620F013A24601B1300D62706 /* AllRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620F013324601B1300D62706 /* AllRise.swift */; };
 		624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4B23F6E16B0068D139 /* FakeSignup.swift */; };
 		624ECD5323F6E16B0068D139 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */; };
-		624ECD5523F6E16B0068D139 /* PlaneMoonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */; };
-		624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4F23F6E16B0068D139 /* FlyModifier.swift */; };
-		624ECD5923F6E16B0068D139 /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD5023F6E16B0068D139 /* Moonshot.swift */; };
-		624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */; };
 		624FDE7F2472E3AA00023E2B /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624FDE7E2472E29B00023E2B /* Toggles.swift */; };
 		624FDE802472E3AE00023E2B /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624FDE7E2472E29B00023E2B /* Toggles.swift */; };
 		6285E1A924239BE3008A27B1 /* RealtimeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6285E1A724239BE3008A27B1 /* RealtimeJson.swift */; };
@@ -288,17 +287,17 @@
 			files = (
 				620F013A24601B1300D62706 /* AllRise.swift in Sources */,
 				62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */,
+				620C4B4324754A1A00CF52D7 /* Moonshot.swift in Sources */,
 				6285E1AA24239BE3008A27B1 /* LandmarkModel.swift in Sources */,
 				624FDE7F2472E3AA00023E2B /* Toggles.swift in Sources */,
+				620C4B4224754A1A00CF52D7 /* FlyModifier.swift in Sources */,
 				624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */,
 				62D23674240846AB007F9AD8 /* ContentView.swift in Sources */,
 				620F013824601B1300D62706 /* KeyboardProperties.swift in Sources */,
-				624ECD5923F6E16B0068D139 /* Moonshot.swift in Sources */,
 				6285E1A924239BE3008A27B1 /* RealtimeJson.swift in Sources */,
-				624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */,
 				62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */,
-				624ECD5523F6E16B0068D139 /* PlaneMoonScene.swift in Sources */,
 				624ECD5323F6E16B0068D139 /* SignUpFormModel.swift in Sources */,
+				620C4B4124754A1A00CF52D7 /* PlaneMoonScene.swift in Sources */,
 				62E7012024221F4F00136837 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,10 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				624FDE802472E3AE00023E2B /* Toggles.swift in Sources */,
+				620C4B4924754A6800CF52D7 /* LandmarkModel.swift in Sources */,
 				62E7011F24221F4E00136837 /* Example.swift in Sources */,
 				62D23675240846AF007F9AD8 /* AppDelegate.swift in Sources */,
-				624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */,
-				62007EB423FD90E0006EB17B /* ScrollMagic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
