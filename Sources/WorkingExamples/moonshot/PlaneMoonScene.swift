@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct PlaneMoonScene: View {
+struct PlaneMoonScene: View {
   
   static let totalDistance: CGFloat = 200
   static let moonDistance: CGFloat = totalDistance + 30
@@ -50,9 +50,7 @@ public struct PlaneMoonScene: View {
     .padding()
   }
 
-  public init() { }
-
-  public var body: some View {
+  var body: some View {
     VStack {
       ZStack(alignment: .bottomLeading) {
         Color.purple // Background

@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct FakeSignup: View {
+struct FakeSignup: View {
   
   @ObservedObject var model = SignUpFormModel()
 
@@ -9,13 +9,13 @@ public struct FakeSignup: View {
   @State var signUpDisabled = true
   @State var alertShown = false
 
-  public init() { }
+  init() { }
   
-  public init(usernameAvailable: Bool) {
+  init(usernameAvailable: Bool) {
     self.usernameAvailable = usernameAvailable
   }
 
-  public var body: some View {
+  var body: some View {
     NavigationView {
       VStack {
         Form {

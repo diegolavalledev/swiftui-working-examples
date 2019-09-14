@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct ScrollMagic: View {
+struct ScrollMagic: View {
   
   private struct OffsetKey: PreferenceKey {
     static var defaultValue: CGFloat = 0
@@ -84,9 +84,7 @@ public struct ScrollMagic: View {
     .opacity(onTop ? 0 : 0.85)
   }
 
-  public init() { }
-
-  public var body: some View {
+  var body: some View {
     ZStack {
       scrollView
       .onPreferenceChange(OffsetKey.self) {

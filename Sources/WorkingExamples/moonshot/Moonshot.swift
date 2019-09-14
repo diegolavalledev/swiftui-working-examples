@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct Moonshot: View {
+struct Moonshot: View {
   
   static let totalDistance: CGFloat = 200
   static let moonDistance: CGFloat = totalDistance + 30
@@ -60,9 +60,7 @@ public struct Moonshot: View {
     .padding()
   }
 
-  public init() { }
-
-  public var body: some View {
+  var body: some View {
     VStack {
       ZStack(alignment: .bottomLeading) {
         Color.purple // Background

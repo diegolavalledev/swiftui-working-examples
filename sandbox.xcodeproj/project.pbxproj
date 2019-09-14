@@ -14,6 +14,8 @@
 		624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4F23F6E16B0068D139 /* FlyModifier.swift */; };
 		624ECD5923F6E16B0068D139 /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD5023F6E16B0068D139 /* Moonshot.swift */; };
 		624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */; };
+		6285E1A924239BE3008A27B1 /* RealtimeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6285E1A724239BE3008A27B1 /* RealtimeJson.swift */; };
+		6285E1AA24239BE3008A27B1 /* LandmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6285E1A824239BE3008A27B1 /* LandmarkModel.swift */; };
 		62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */; };
 		62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366F24084697007F9AD8 /* AppDelegate.swift */; };
 		62D23674240846AB007F9AD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2367224084697007F9AD8 /* ContentView.swift */; };
@@ -29,6 +31,8 @@
 		624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneMoonScene.swift; sourceTree = "<group>"; };
 		624ECD4F23F6E16B0068D139 /* FlyModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyModifier.swift; sourceTree = "<group>"; };
 		624ECD5023F6E16B0068D139 /* Moonshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moonshot.swift; sourceTree = "<group>"; };
+		6285E1A724239BE3008A27B1 /* RealtimeJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeJson.swift; sourceTree = "<group>"; };
+		6285E1A824239BE3008A27B1 /* LandmarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkModel.swift; sourceTree = "<group>"; };
 		62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollMagic.swift; sourceTree = "<group>"; };
 		62D2366A24084697007F9AD8 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		62D2366C24084697007F9AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,9 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				62E7011E24221EA600136837 /* Example.swift */,
-				624ECD4D23F6E16B0068D139 /* moonshot */,
 				624ECD4A23F6E16B0068D139 /* fake-signup */,
+				624ECD4D23F6E16B0068D139 /* moonshot */,
 				62BD729E23FD76D000D02AF0 /* scroll-magic */,
+				6285E1A624239BE3008A27B1 /* realtime-json */,
 			);
 			name = WorkingExamples;
 			path = Sources/WorkingExamples;
@@ -108,6 +113,15 @@
 				624ECD5023F6E16B0068D139 /* Moonshot.swift */,
 			);
 			path = moonshot;
+			sourceTree = "<group>";
+		};
+		6285E1A624239BE3008A27B1 /* realtime-json */ = {
+			isa = PBXGroup;
+			children = (
+				6285E1A724239BE3008A27B1 /* RealtimeJson.swift */,
+				6285E1A824239BE3008A27B1 /* LandmarkModel.swift */,
+			);
+			path = "realtime-json";
 			sourceTree = "<group>";
 		};
 		62BD729E23FD76D000D02AF0 /* scroll-magic */ = {
@@ -247,9 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */,
+				6285E1AA24239BE3008A27B1 /* LandmarkModel.swift in Sources */,
 				624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */,
 				62D23674240846AB007F9AD8 /* ContentView.swift in Sources */,
 				624ECD5923F6E16B0068D139 /* Moonshot.swift in Sources */,
+				6285E1A924239BE3008A27B1 /* RealtimeJson.swift in Sources */,
 				624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */,
 				62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */,
 				624ECD5523F6E16B0068D139 /* PlaneMoonScene.swift in Sources */,

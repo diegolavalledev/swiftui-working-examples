@@ -9,6 +9,7 @@ public struct Example: Identifiable, CustomStringConvertible {
     case moonshot = "/examples/moonshot"
     case fakeSignup = "/examples/fake-signup"
     case scrollMagic = "/examples/scroll-magic"
+    case realtimeJson = "/examples/realtime-json"
   }
 
   public var description: String {
@@ -23,7 +24,8 @@ public struct Example: Identifiable, CustomStringConvertible {
   public static var byKey: KeyValuePairs = [
     Key.moonshot: Example(.moonshot, view: Moonshot()),
     Key.fakeSignup: Example(.fakeSignup, view: FakeSignup()),
-    Key.scrollMagic: Example(.scrollMagic, view: ScrollMagic())
+    Key.scrollMagic: Example(.scrollMagic, view: ScrollMagic()),
+    Key.realtimeJson: Example(.realtimeJson, view: RealtimeJson())
   ]
   
   public static func withPermalink(_ permalink: String) -> Self? {
