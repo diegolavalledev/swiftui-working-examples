@@ -3,7 +3,7 @@ import Combine
 
 func usernameAvailable(_ username: String, completion: @escaping (Bool) -> ()) -> () {
   DispatchQueue.main .async {
-    if (username == "foobar") {
+    if (username == "john") {
       completion(true)
     } else {
       completion(false)
@@ -19,7 +19,7 @@ class SignUpFormModel: ObservableObject {
   
   var validatedPassword: AnyPublisher<String?, Never> {
     $password.combineLatest($passwordAgain) { password, passwordAgain in
-      guard password == passwordAgain, password.count > 6 else {
+      guard password == passwordAgain, password.count >= 8 else {
         return "invalid"
       }
       return password

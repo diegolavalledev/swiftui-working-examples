@@ -15,36 +15,47 @@ public struct JumpingTitleBar: View {
     GeometryReader { g in
       ScrollView(.vertical) {
         Text("""
+
+
         Scroll down to see the title bar jump from top to bottom.
-        
+        ⬇︎
+
         Scroll down to see the title bar jump from top to bottom.
-        
+        ⬇︎
+
         Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
-        
-        Scroll down to see the title bar jump from top to bottom.
+        ⬇︎
+
+        ⬇︎
+
+        ⬇︎
+
+        ⬇︎
+
+        ⬇︎
+
+        ⬇︎
+
+        ⬆︎
+
+        ⬆︎
+
+        ⬆︎
+
+        ⬆︎
+
+        ⬆︎
+
+        ⬆︎
+        Scroll up to see the title bar jump back to the top.
+
+        ⬆︎
+        Scroll up to see the title bar jump back to the top.
+
+        ⬆︎
+        Scroll up to see the title bar jump back to the top.
         """)
+        .multilineTextAlignment(.center)
         .padding(.top, 60)
         .padding(.bottom, 50)
         .anchorPreference(key: OffsetKey.self, value: .top) {

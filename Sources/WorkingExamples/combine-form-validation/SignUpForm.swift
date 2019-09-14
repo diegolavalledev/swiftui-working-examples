@@ -18,42 +18,39 @@ public struct SignUpForm: View {
   public var body: some View {
     NavigationView {
       VStack {
-        Spacer()
-        Text("""
-          Please fill up your information to sign up for the service.
-          Password must be 6 characters or more. It cannot be 'password'.
-          Username must be available (i.e. 'foobar').
-        """)
-          .padding()
         Form {
-          Section {
+          Section(header: Text("Pick an available username")) {
             HStack {
-              TextField("Username", text: $model.username)
+              TextField("Username (use \"john\")", text: $model.username)
                 .autocapitalization(.none)
                 .textContentType(.nickname)
                 .keyboardType(.alphabet)
+                .tag(0)
               Text(usernameAvailable ? "✅" : "❌")
                 .onReceive(model.validatedUsername) {
                   self.usernameAvailable = $0 != nil
               }
             }
           }
-          Section {
-            TextField("Password 'secreto'", text: $model.password)
+          Section(footer: Text("8+ characters, not \"password\"")) {
+            SecureField("Password", text: $model.password)
               .autocapitalization(.none)
               .textContentType(.password)
               .keyboardType(.alphabet)
+              .tag(1)
             HStack {
-              TextField("Password again", text: $model.passwordAgain)
+              SecureField("Password again", text: $model.passwordAgain)
                 .autocapitalization(.none)
                 .textContentType(.password)
                 .keyboardType(.alphabet)
+                .tag(2)
               Text(passwordsValid ? "✅" : "❌")
                 .onReceive(model.validatedPassword) {
                   self.passwordsValid = $0 != "invalid"
               }
             }
           }
+
           Section {
             Button("Sign up") {
               self.alertShown.toggle()
@@ -72,19 +69,7 @@ public struct SignUpForm: View {
               self.signUpDisabled = false
             }
           }
-            //.disabled(validUsername == nil || validPassword == nil)
-            //.onReceive(model.validatedCredentials) {
-            //  guard let credentials = $0 else {
-            //    self.validUsername = nil
-            //    self.validPassword = nil
-            //    return
-            //  }
-            //  let (validUsername, validPassword) = credentials
-            //  self.validUsername = validUsername
-            //  self.validPassword = validPassword == "invalid" ? nil : validPassword
-            //}
-            //}
-            .frame(maxWidth: .infinity, alignment: .center)
+          .frame(maxWidth: .infinity, alignment: .center)
         }
         Spacer()
       }

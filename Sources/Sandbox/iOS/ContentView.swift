@@ -2,42 +2,45 @@ import SwiftUI
 
 struct ContentView: View {
 
-  @State var example: String!
-  @State var showSheet = false
+  struct Example: Identifiable {
+    var id: String
+    var view: AnyView
+    
+    init<V: View>(_ id: String, view: V) {
+      self.id = id
+      self.view = AnyView(view)
+    }
+  }
+
+  static var examples = [
+    Example("animation-ended", view: ImprovedPlaneMoonScene()),
+    Example("combine-form-validation", view: SignUpForm()),
+    Example("scroll-magic", view: JumpingTitleBar())
+  ]
+
+  @State var example: Example?
 
   struct ExampleRow: View {
 
-    var name: String
-    var onPressed: () -> ()
+    var example: Example
+    @Binding var selected: Example?
 
     var body: some View {
-      Button("\(name)", action: onPressed)
+      Button("\(example.id)") {
+        self.selected = self.example
+      }
+      .padding()
     }
   }
 
   var body: some View {
-    VStack {
-      ForEach([
-        "animation-ended",
-        "combine-form-validation",
-        "scroll-magic",
-      ], id: \.self) { example in
-        ExampleRow(name: example) {
-          self.example = example
-          self.showSheet.toggle()
-        }
+    List {
+      ForEach(Self.examples) {
+        ExampleRow(example: $0, selected: self.$example)
       }
     }
-    .sheet(isPresented: $showSheet) {
-      if self.example == "animation-ended" {
-        ImprovedPlaneMoonScene()
-      } else if self.example == "combine-form-validation" {
-        SignUpForm()
-      } else if self.example == "scroll-magic" {
-        JumpingTitleBar()
-      } else {
-        Text("N/A")
-      }
+    .sheet(item: $example) {
+      $0.view
     }
   }
 }
