@@ -72,7 +72,9 @@ public struct JumpingTitleBar: View {
     .background(Color.white)
     .opacity(onTop ? 0 : 0.85)
   }
-  
+
+  public init() { }
+
   public var body: some View {
     ZStack {
       scrollView
