@@ -62,14 +62,14 @@ public struct JumpingTitleBar: View {
     }
     .frame(maxWidth: .infinity)
     .padding(.top, 35)
-    .background(Color.white)
+    .background(Color(UIColor.systemBackground))
   }
   
   var bottomBar: some View {
     (Text("Title Bar").bold() + Text(" at the bottom 👇"))
     .frame(maxWidth: .infinity)
     .padding()
-    .background(Color.white)
+    .background(Color(UIColor.systemBackground))
     .opacity(onTop ? 0 : 0.85)
   }
 
