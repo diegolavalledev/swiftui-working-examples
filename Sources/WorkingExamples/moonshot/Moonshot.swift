@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct ImprovedPlaneMoonScene: View {
+public struct Moonshot: View {
   
   static let totalDistance: CGFloat = 200
   static let moonDistance: CGFloat = totalDistance + 30
@@ -88,8 +88,8 @@ public struct ImprovedPlaneMoonScene: View {
   }
 }
 
-struct ImprovedPlaneMoonScene_Previews: PreviewProvider {
+struct Moonshot_Previews: PreviewProvider {
   static var previews: some View {
-    ImprovedPlaneMoonScene()
+    Moonshot()
   }
 }

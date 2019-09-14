@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct SignUpForm: View {
+public struct FakeSignup: View {
   
   @ObservedObject var model = SignUpFormModel()
 
@@ -81,11 +81,11 @@ public struct SignUpForm: View {
   }
 }
 
-struct SignUpForm_Previews: PreviewProvider {
+struct FakeSignup_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      SignUpForm()
-      SignUpForm(usernameAvailable: true)
+      FakeSignup()
+      FakeSignup(usernameAvailable: true)
     }
   }
 }

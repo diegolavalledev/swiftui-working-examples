@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct JumpingTitleBar: View {
+public struct ScrollMagic: View {
   
   private struct OffsetKey: PreferenceKey {
     static var defaultValue: CGFloat = 0
@@ -113,8 +113,8 @@ public struct JumpingTitleBar: View {
   }
 }
 
-struct JumpingTitleBar_Previews: PreviewProvider {
+struct ScrollMagic_Previews: PreviewProvider {
   static var previews: some View {
-    JumpingTitleBar()
+    ScrollMagic()
   }
 }

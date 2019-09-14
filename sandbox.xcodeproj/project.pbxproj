@@ -18,6 +18,8 @@
 		62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366F24084697007F9AD8 /* AppDelegate.swift */; };
 		62D23674240846AB007F9AD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2367224084697007F9AD8 /* ContentView.swift */; };
 		62D23675240846AF007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366C24084697007F9AD8 /* AppDelegate.swift */; };
+		62E7011F24221F4E00136837 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7011E24221EA600136837 /* Example.swift */; };
+		62E7012024221F4F00136837 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7011E24221EA600136837 /* Example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		62D2367124084697007F9AD8 /* empty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = empty.storyboard; sourceTree = "<group>"; };
 		62D2367224084697007F9AD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		62DE9DE323F6BF0400E568BD /* WorkingExamples-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorkingExamples-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E7011E24221EA600136837 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 		621D026C2369BD6C00F57121 /* WorkingExamples */ = {
 			isa = PBXGroup;
 			children = (
+				62E7011E24221EA600136837 /* Example.swift */,
 				624ECD4D23F6E16B0068D139 /* moonshot */,
 				624ECD4A23F6E16B0068D139 /* fake-signup */,
 				62BD729E23FD76D000D02AF0 /* scroll-magic */,
@@ -190,7 +194,7 @@
 			attributes = {
 				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Swift You and I";
 				TargetAttributes = {
 					624371152358A5040037B9BC = {
@@ -250,6 +254,7 @@
 				62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */,
 				624ECD5523F6E16B0068D139 /* PlaneMoonScene.swift in Sources */,
 				624ECD5323F6E16B0068D139 /* SignUpFormModel.swift in Sources */,
+				62E7012024221F4F00136837 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E7011F24221F4E00136837 /* Example.swift in Sources */,
 				62D23675240846AF007F9AD8 /* AppDelegate.swift in Sources */,
 				624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */,
 				62007EB423FD90E0006EB17B /* ScrollMagic.swift in Sources */,
@@ -353,10 +359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 92XVGR6M56;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Sandbox/macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
