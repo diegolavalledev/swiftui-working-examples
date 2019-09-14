@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62007EB423FD90E0006EB17B /* JumpingTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */; };
 		6235007923F6C82A00990CC2 /* empty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6235007823F6C82A00990CC2 /* empty.storyboard */; };
 		6243711A2358A5040037B9BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624371192358A5040037B9BC /* AppDelegate.swift */; };
 		624ECD5123F6E16B0068D139 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4B23F6E16B0068D139 /* SignUpForm.swift */; };
@@ -15,6 +16,7 @@
 		624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4F23F6E16B0068D139 /* FlyModifier.swift */; };
 		624ECD5923F6E16B0068D139 /* ImprovedPlaneMoonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD5023F6E16B0068D139 /* ImprovedPlaneMoonScene.swift */; };
 		624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */; };
+		62BD72A023FD76D000D02AF0 /* JumpingTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */; };
 		62DE9DDE23F6BD6600E568BD /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DE9DDD23F6BD6600E568BD /* assets.xcassets */; };
 		62DE9DE623F6BF0400E568BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DE9DE523F6BF0400E568BD /* AppDelegate.swift */; };
 		62DE9DFD23F6C01700E568BD /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DE9DDD23F6BD6600E568BD /* assets.xcassets */; };
@@ -30,6 +32,7 @@
 		624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneMoonScene.swift; sourceTree = "<group>"; };
 		624ECD4F23F6E16B0068D139 /* FlyModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyModifier.swift; sourceTree = "<group>"; };
 		624ECD5023F6E16B0068D139 /* ImprovedPlaneMoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprovedPlaneMoonScene.swift; sourceTree = "<group>"; };
+		62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpingTitleBar.swift; sourceTree = "<group>"; };
 		62DE9DDD23F6BD6600E568BD /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		62DE9DE323F6BF0400E568BD /* WorkingExamples-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorkingExamples-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DE9DE523F6BF0400E568BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			children = (
 				624ECD4D23F6E16B0068D139 /* animation-ended */,
 				624ECD4A23F6E16B0068D139 /* combine-form-validation */,
+				62BD729E23FD76D000D02AF0 /* scroll-magic */,
 			);
 			name = WorkingExamples;
 			path = Sources/WorkingExamples;
@@ -131,6 +135,14 @@
 				6235007823F6C82A00990CC2 /* empty.storyboard */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		62BD729E23FD76D000D02AF0 /* scroll-magic */ = {
+			isa = PBXGroup;
+			children = (
+				62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */,
+			);
+			path = "scroll-magic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6243711A2358A5040037B9BC /* AppDelegate.swift in Sources */,
+				62BD72A023FD76D000D02AF0 /* JumpingTitleBar.swift in Sources */,
 				624ECD5123F6E16B0068D139 /* SignUpForm.swift in Sources */,
 				624ECD5923F6E16B0068D139 /* ImprovedPlaneMoonScene.swift in Sources */,
 				624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */,
@@ -248,6 +261,7 @@
 			files = (
 				62DE9DE623F6BF0400E568BD /* AppDelegate.swift in Sources */,
 				624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */,
+				62007EB423FD90E0006EB17B /* JumpingTitleBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
