@@ -14,9 +14,6 @@ class KeyboardProperties: ObservableObject {
   init() {
     subscription = NotificationCenter.default
     .publisher(for: UIResponder.keyboardDidShowNotification)
-    .merge(
-      with: NotificationCenter.default.publisher(for: UIResponder.keyboardDidShowNotification)
-    )
     .compactMap { $0.userInfo }
     .compactMap {
       $0[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
@@ -26,7 +23,6 @@ class KeyboardProperties: ObservableObject {
         CGRect.zero
       }
     )
-    .print()
     .assign(to: \.frame, on: self)
   }
 }

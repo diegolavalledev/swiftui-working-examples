@@ -2,7 +2,7 @@ import SwiftUI
 
 struct AllRise: View {
   
-  @State var textFieldValue = ""
+  @State var textValue = ""
 
   @ObservedObject var keyboardProps = KeyboardProperties.shared
   
@@ -19,7 +19,7 @@ struct AllRise: View {
 
       Group {
         Text("The following field would otherwise be covered by the software keyboard coming up.")
-        TextField("Enter some text", text: self.$textFieldValue)
+        TextField("Enter some text", text: $textValue)
         .textFieldStyle(RoundedBorderTextFieldStyle())
       }
       .offset(y: -kbHeight)
