@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62007EB423FD90E0006EB17B /* JumpingTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */; };
-		624ECD5123F6E16B0068D139 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4B23F6E16B0068D139 /* SignUpForm.swift */; };
+		62007EB423FD90E0006EB17B /* ScrollMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */; };
+		624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4B23F6E16B0068D139 /* FakeSignup.swift */; };
 		624ECD5323F6E16B0068D139 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */; };
 		624ECD5523F6E16B0068D139 /* PlaneMoonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */; };
 		624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4F23F6E16B0068D139 /* FlyModifier.swift */; };
-		624ECD5923F6E16B0068D139 /* ImprovedPlaneMoonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD5023F6E16B0068D139 /* ImprovedPlaneMoonScene.swift */; };
+		624ECD5923F6E16B0068D139 /* Moonshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD5023F6E16B0068D139 /* Moonshot.swift */; };
 		624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */; };
-		62BD72A023FD76D000D02AF0 /* JumpingTitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */; };
+		62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */; };
 		62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366F24084697007F9AD8 /* AppDelegate.swift */; };
 		62D23674240846AB007F9AD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2367224084697007F9AD8 /* ContentView.swift */; };
 		62D23675240846AF007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366C24084697007F9AD8 /* AppDelegate.swift */; };
@@ -22,12 +22,12 @@
 
 /* Begin PBXFileReference section */
 		624371162358A5040037B9BC /* WorkingExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		624ECD4B23F6E16B0068D139 /* SignUpForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
+		624ECD4B23F6E16B0068D139 /* FakeSignup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSignup.swift; sourceTree = "<group>"; };
 		624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFormModel.swift; sourceTree = "<group>"; };
 		624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneMoonScene.swift; sourceTree = "<group>"; };
 		624ECD4F23F6E16B0068D139 /* FlyModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyModifier.swift; sourceTree = "<group>"; };
-		624ECD5023F6E16B0068D139 /* ImprovedPlaneMoonScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprovedPlaneMoonScene.swift; sourceTree = "<group>"; };
-		62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpingTitleBar.swift; sourceTree = "<group>"; };
+		624ECD5023F6E16B0068D139 /* Moonshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moonshot.swift; sourceTree = "<group>"; };
+		62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollMagic.swift; sourceTree = "<group>"; };
 		62D2366A24084697007F9AD8 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		62D2366C24084697007F9AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D2366D24084697007F9AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 		621D026C2369BD6C00F57121 /* WorkingExamples */ = {
 			isa = PBXGroup;
 			children = (
-				624ECD4D23F6E16B0068D139 /* animation-ended */,
-				624ECD4A23F6E16B0068D139 /* combine-form-validation */,
+				624ECD4D23F6E16B0068D139 /* moonshot */,
+				624ECD4A23F6E16B0068D139 /* fake-signup */,
 				62BD729E23FD76D000D02AF0 /* scroll-magic */,
 			);
 			name = WorkingExamples;
@@ -87,29 +87,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		624ECD4A23F6E16B0068D139 /* combine-form-validation */ = {
+		624ECD4A23F6E16B0068D139 /* fake-signup */ = {
 			isa = PBXGroup;
 			children = (
-				624ECD4B23F6E16B0068D139 /* SignUpForm.swift */,
+				624ECD4B23F6E16B0068D139 /* FakeSignup.swift */,
 				624ECD4C23F6E16B0068D139 /* SignUpFormModel.swift */,
 			);
-			path = "combine-form-validation";
+			path = "fake-signup";
 			sourceTree = "<group>";
 		};
-		624ECD4D23F6E16B0068D139 /* animation-ended */ = {
+		624ECD4D23F6E16B0068D139 /* moonshot */ = {
 			isa = PBXGroup;
 			children = (
 				624ECD4E23F6E16B0068D139 /* PlaneMoonScene.swift */,
 				624ECD4F23F6E16B0068D139 /* FlyModifier.swift */,
-				624ECD5023F6E16B0068D139 /* ImprovedPlaneMoonScene.swift */,
+				624ECD5023F6E16B0068D139 /* Moonshot.swift */,
 			);
-			path = "animation-ended";
+			path = moonshot;
 			sourceTree = "<group>";
 		};
 		62BD729E23FD76D000D02AF0 /* scroll-magic */ = {
 			isa = PBXGroup;
 			children = (
-				62BD729F23FD76D000D02AF0 /* JumpingTitleBar.swift */,
+				62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */,
 			);
 			path = "scroll-magic";
 			sourceTree = "<group>";
@@ -242,10 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62BD72A023FD76D000D02AF0 /* JumpingTitleBar.swift in Sources */,
-				624ECD5123F6E16B0068D139 /* SignUpForm.swift in Sources */,
+				62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */,
+				624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */,
 				62D23674240846AB007F9AD8 /* ContentView.swift in Sources */,
-				624ECD5923F6E16B0068D139 /* ImprovedPlaneMoonScene.swift in Sources */,
+				624ECD5923F6E16B0068D139 /* Moonshot.swift in Sources */,
 				624ECD5723F6E16B0068D139 /* FlyModifier.swift in Sources */,
 				62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */,
 				624ECD5523F6E16B0068D139 /* PlaneMoonScene.swift in Sources */,
@@ -259,7 +259,7 @@
 			files = (
 				62D23675240846AF007F9AD8 /* AppDelegate.swift in Sources */,
 				624ECD5E23F6E2300068D139 /* SignUpFormModel.swift in Sources */,
-				62007EB423FD90E0006EB17B /* JumpingTitleBar.swift in Sources */,
+				62007EB423FD90E0006EB17B /* ScrollMagic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
