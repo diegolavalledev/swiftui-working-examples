@@ -19,6 +19,8 @@
 		624FDE802472E3AE00023E2B /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624FDE7E2472E29B00023E2B /* Toggles.swift */; };
 		6285E1A924239BE3008A27B1 /* RealtimeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6285E1A724239BE3008A27B1 /* RealtimeJson.swift */; };
 		6285E1AA24239BE3008A27B1 /* LandmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6285E1A824239BE3008A27B1 /* LandmarkModel.swift */; };
+		62A18EFF24DB0F99001253F5 /* FaveDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A18EFE24DB0EEB001253F5 /* FaveDishes.swift */; };
+		62A18F0024DB0F9A001253F5 /* FaveDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A18EFE24DB0EEB001253F5 /* FaveDishes.swift */; };
 		62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */; };
 		62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366F24084697007F9AD8 /* AppDelegate.swift */; };
 		62D23674240846AB007F9AD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2367224084697007F9AD8 /* ContentView.swift */; };
@@ -39,6 +41,7 @@
 		624FDE7E2472E29B00023E2B /* Toggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggles.swift; sourceTree = "<group>"; };
 		6285E1A724239BE3008A27B1 /* RealtimeJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealtimeJson.swift; sourceTree = "<group>"; };
 		6285E1A824239BE3008A27B1 /* LandmarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkModel.swift; sourceTree = "<group>"; };
+		62A18EFE24DB0EEB001253F5 /* FaveDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveDishes.swift; sourceTree = "<group>"; };
 		62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollMagic.swift; sourceTree = "<group>"; };
 		62D2366A24084697007F9AD8 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		62D2366C24084697007F9AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		621D026C2369BD6C00F57121 /* WorkingExamples */ = {
 			isa = PBXGroup;
 			children = (
+				62A18EFD24DB0EC6001253F5 /* fave-dishes */,
 				624FDE7D2472E28100023E2B /* toggles */,
 				62E7011E24221EA600136837 /* Example.swift */,
 				620F012F24601B1300D62706 /* all-rise */,
@@ -147,6 +151,14 @@
 				6285E1A824239BE3008A27B1 /* LandmarkModel.swift */,
 			);
 			path = "realtime-json";
+			sourceTree = "<group>";
+		};
+		62A18EFD24DB0EC6001253F5 /* fave-dishes */ = {
+			isa = PBXGroup;
+			children = (
+				62A18EFE24DB0EEB001253F5 /* FaveDishes.swift */,
+			);
+			path = "fave-dishes";
 			sourceTree = "<group>";
 		};
 		62BD729E23FD76D000D02AF0 /* scroll-magic */ = {
@@ -233,7 +245,7 @@
 			attributes = {
 				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Swift You and I";
 				TargetAttributes = {
 					624371152358A5040037B9BC = {
@@ -294,6 +306,7 @@
 				624ECD5123F6E16B0068D139 /* FakeSignup.swift in Sources */,
 				62D23674240846AB007F9AD8 /* ContentView.swift in Sources */,
 				620F013824601B1300D62706 /* KeyboardProperties.swift in Sources */,
+				62A18EFF24DB0F99001253F5 /* FaveDishes.swift in Sources */,
 				6285E1A924239BE3008A27B1 /* RealtimeJson.swift in Sources */,
 				62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */,
 				624ECD5323F6E16B0068D139 /* SignUpFormModel.swift in Sources */,
@@ -310,6 +323,7 @@
 				620C4B4924754A6800CF52D7 /* LandmarkModel.swift in Sources */,
 				62E7011F24221F4E00136837 /* Example.swift in Sources */,
 				62D23675240846AF007F9AD8 /* AppDelegate.swift in Sources */,
+				62A18F0024DB0F9A001253F5 /* FaveDishes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +356,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;

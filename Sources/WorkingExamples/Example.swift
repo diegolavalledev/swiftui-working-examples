@@ -12,6 +12,7 @@ public struct Example: Identifiable, CustomStringConvertible {
     case realtimeJson = "/examples/realtime-json"
     case allRise = "/examples/all-rise"
     case toggles = "/examples/toggles"
+    case faveDishes = "/examples/fave-dishes"
   }
 
   public var description: String {
@@ -26,6 +27,7 @@ public struct Example: Identifiable, CustomStringConvertible {
 #if os(macOS)
   public static var byKey: KeyValuePairs = [
     Key.toggles: Example(.toggles, view: Toggles()),
+    Key.faveDishes: Example(.faveDishes, view: FaveDishes()),
   ]
 #endif
 #if os(iOS)
@@ -36,6 +38,7 @@ public struct Example: Identifiable, CustomStringConvertible {
     Key.realtimeJson: Example(.realtimeJson, view: RealtimeJson()),
     Key.allRise: Example(.allRise, view: AllRise()),
     Key.toggles: Example(.toggles, view: Toggles()),
+    Key.faveDishes: Example(.faveDishes, view: FaveDishes()),
   ]
 #endif
 
