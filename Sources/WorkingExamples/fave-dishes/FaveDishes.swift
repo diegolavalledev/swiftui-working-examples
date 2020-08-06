@@ -110,8 +110,8 @@ struct DishList: View {
   var body: some View {
     VStack {
       ForEach(dishes.indices) { i in
-        if dishes[i].id != pinnedId {
-          DishRow(dish: $dishes[i], pinnedId: $pinnedId)
+        if self.dishes[i].id != self.pinnedId {
+          DishRow(dish: self.$dishes[i], pinnedId: self.$pinnedId)
         }
       }
     }
