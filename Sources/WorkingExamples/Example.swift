@@ -13,6 +13,7 @@ public struct Example: Identifiable, CustomStringConvertible {
     case allRise = "/examples/all-rise"
     case toggles = "/examples/toggles"
     case faveDishes = "/examples/fave-dishes"
+    case countDownUp = "/examples/count-down-up"
   }
 
   public var description: String {
@@ -28,6 +29,7 @@ public struct Example: Identifiable, CustomStringConvertible {
   public static var byKey: KeyValuePairs = [
     Key.toggles: Example(.toggles, view: Toggles()),
     Key.faveDishes: Example(.faveDishes, view: FaveDishes()),
+    Key.countDownUp: Example(.countDownUp, view: CountDownUp()),
   ]
 #endif
 #if os(iOS)
@@ -39,6 +41,7 @@ public struct Example: Identifiable, CustomStringConvertible {
     Key.allRise: Example(.allRise, view: AllRise()),
     Key.toggles: Example(.toggles, view: Toggles()),
     Key.faveDishes: Example(.faveDishes, view: FaveDishes()),
+    Key.countDownUp: Example(.countDownUp, view: CountDownUp()),
   ]
 #endif
 

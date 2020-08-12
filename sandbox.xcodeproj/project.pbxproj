@@ -22,6 +22,8 @@
 		62A18EFF24DB0F99001253F5 /* FaveDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A18EFE24DB0EEB001253F5 /* FaveDishes.swift */; };
 		62A18F0024DB0F9A001253F5 /* FaveDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A18EFE24DB0EEB001253F5 /* FaveDishes.swift */; };
 		62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */; };
+		62BF646A24E2BC9C00FC5B49 /* CountDownUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BF646924E2BC9B00FC5B49 /* CountDownUp.swift */; };
+		62BF646B24E2BC9C00FC5B49 /* CountDownUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BF646924E2BC9B00FC5B49 /* CountDownUp.swift */; };
 		62D23673240846AB007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366F24084697007F9AD8 /* AppDelegate.swift */; };
 		62D23674240846AB007F9AD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2367224084697007F9AD8 /* ContentView.swift */; };
 		62D23675240846AF007F9AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D2366C24084697007F9AD8 /* AppDelegate.swift */; };
@@ -43,6 +45,7 @@
 		6285E1A824239BE3008A27B1 /* LandmarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkModel.swift; sourceTree = "<group>"; };
 		62A18EFE24DB0EEB001253F5 /* FaveDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveDishes.swift; sourceTree = "<group>"; };
 		62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollMagic.swift; sourceTree = "<group>"; };
+		62BF646924E2BC9B00FC5B49 /* CountDownUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownUp.swift; sourceTree = "<group>"; };
 		62D2366A24084697007F9AD8 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		62D2366C24084697007F9AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D2366D24084697007F9AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		621D026C2369BD6C00F57121 /* WorkingExamples */ = {
 			isa = PBXGroup;
 			children = (
+				62BF646824E2BC9B00FC5B49 /* count-down-up */,
 				62A18EFD24DB0EC6001253F5 /* fave-dishes */,
 				624FDE7D2472E28100023E2B /* toggles */,
 				62E7011E24221EA600136837 /* Example.swift */,
@@ -167,6 +171,14 @@
 				62BD729F23FD76D000D02AF0 /* ScrollMagic.swift */,
 			);
 			path = "scroll-magic";
+			sourceTree = "<group>";
+		};
+		62BF646824E2BC9B00FC5B49 /* count-down-up */ = {
+			isa = PBXGroup;
+			children = (
+				62BF646924E2BC9B00FC5B49 /* CountDownUp.swift */,
+			);
+			path = "count-down-up";
 			sourceTree = "<group>";
 		};
 		62D2366924084697007F9AD8 /* Sandbox */ = {
@@ -299,6 +311,7 @@
 			files = (
 				620F013A24601B1300D62706 /* AllRise.swift in Sources */,
 				62BD72A023FD76D000D02AF0 /* ScrollMagic.swift in Sources */,
+				62BF646A24E2BC9C00FC5B49 /* CountDownUp.swift in Sources */,
 				620C4B4324754A1A00CF52D7 /* Moonshot.swift in Sources */,
 				6285E1AA24239BE3008A27B1 /* LandmarkModel.swift in Sources */,
 				624FDE7F2472E3AA00023E2B /* Toggles.swift in Sources */,
@@ -319,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BF646B24E2BC9C00FC5B49 /* CountDownUp.swift in Sources */,
 				624FDE802472E3AE00023E2B /* Toggles.swift in Sources */,
 				620C4B4924754A6800CF52D7 /* LandmarkModel.swift in Sources */,
 				62E7011F24221F4E00136837 /* Example.swift in Sources */,
