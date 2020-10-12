@@ -1,5 +1,7 @@
 import SwiftUI
 
+#if os(iOS)
+
 struct FakeSignup: View {
   
   @ObservedObject var model = SignUpFormModel()
@@ -89,3 +91,5 @@ struct FakeSignup_Previews: PreviewProvider {
     }
   }
 }
+
+#endif

@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import SwiftUI
 
 struct AllRise: View {
@@ -37,3 +39,5 @@ struct AllRise_Previews: PreviewProvider {
     }
   }
 }
+
+#endif

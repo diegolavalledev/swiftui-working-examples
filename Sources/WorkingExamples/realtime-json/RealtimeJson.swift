@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import SwiftUI
 
 struct RealtimeJson: View {
@@ -25,3 +27,5 @@ struct RealtimeJson_Previews: PreviewProvider {
     }
   }
 }
+
+#endif

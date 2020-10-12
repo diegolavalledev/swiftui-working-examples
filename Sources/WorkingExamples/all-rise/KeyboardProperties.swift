@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import Foundation
 import UIKit
 import CoreGraphics
@@ -26,3 +28,5 @@ class KeyboardProperties: ObservableObject {
     .assign(to: \.frame, on: self)
   }
 }
+
+#endif

@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import SwiftUI
 
 struct ScrollMagic: View {
@@ -116,3 +118,5 @@ struct ScrollMagic_Previews: PreviewProvider {
     ScrollMagic()
   }
 }
+
+#endif

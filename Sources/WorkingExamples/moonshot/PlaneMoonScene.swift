@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import SwiftUI
 
 struct PlaneMoonScene: View {
@@ -69,3 +71,5 @@ struct PlaneMoonScene_Previews: PreviewProvider {
     PlaneMoonScene()
   }
 }
+
+#endif
