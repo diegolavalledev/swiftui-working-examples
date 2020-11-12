@@ -1,25 +1,26 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
   name: "WorkingExamples",
   platforms: [
-   .macOS(.v10_15), .iOS(.v13),
+    .macOS(.v11),
+    .iOS(.v14),
   ],
   products: [
     .library(
       name: "WorkingExamples",
-      targets: ["SwiftUIWorkingExamples"]),
+      targets: ["WorkingExamples"]),
   ],
   dependencies: [],
   targets: [
     .target(
-      name: "SwiftUIWorkingExamples",
+      name: "WorkingExamples",
       dependencies: [],
       path: "Sources/WorkingExamples"
     ),
     .testTarget(
       name: "WorkingExamplesTests",
-      dependencies: ["SwiftUIWorkingExamples"]),
+      dependencies: ["WorkingExamples"]),
   ]
 )
