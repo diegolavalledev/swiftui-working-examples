@@ -3,6 +3,7 @@ import SwiftUI
 public struct Example: View {
 
   public enum Name: String, CaseIterable {
+#if os(iOS)
     case moonshot = "moonshot"
     case fakeSignup = "fake-signup"
     case scrollMagic = "scroll-magic"
@@ -12,6 +13,9 @@ public struct Example: View {
     case faveDishes = "fave-dishes"
     case countDownUp = "count-down-up"
     case thatsAWrap = "thats-a-wrap"
+#else
+    case faveDishes = "fave-dishes"
+#endif
   }
 
   let name: Name
@@ -28,6 +32,7 @@ public struct Example: View {
   }
 
   public var body: some View {
+#if os(iOS)
     switch(name) {
       case .moonshot:
         Moonshot()
@@ -48,11 +53,17 @@ public struct Example: View {
       case .thatsAWrap:
         ThatsAWrap()
     }
+#else
+    switch(name) {
+      case .faveDishes:
+        FaveDishes()
+    }
+#endif
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    Example(.moonshot)
+    Example(.faveDishes)
   }
 }
