@@ -1,17 +1,21 @@
 import SwiftUI
 
+extension Example.Name: Identifiable {
+  public var id: Example.Name.RawValue { self.rawValue }
+}
+
 struct ContentView: View {
 
-  @State var example: Example?
+  @State var exampleName: Example.Name?
 
   struct ExampleRow: View {
 
-    var example: Example
-    @Binding var selected: Example?
+    let name: Example.Name
+    @Binding var selection: Example.Name?
 
     var body: some View {
-      Button(example.description) {
-        self.selected = self.example
+      Button(name.rawValue) {
+        selection = name
       }
       .padding()
     }
@@ -19,12 +23,12 @@ struct ContentView: View {
 
   var body: some View {
     List {
-      ForEach(Example.all) {
-        ExampleRow(example: $0, selected: self.$example)
+      ForEach(Example.Name.allCases) {
+        ExampleRow(name: $0, selection: $exampleName)
       }
     }
-    .sheet(item: $example) {
-      $0.view
+    .sheet(item: $exampleName) {
+      Example($0)
     }
   }
 }

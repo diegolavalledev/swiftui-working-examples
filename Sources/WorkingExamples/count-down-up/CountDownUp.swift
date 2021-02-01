@@ -23,19 +23,21 @@ struct CountDownUp: View {
         )
       )
       HStack {
-        Button(isCounting ? "⏸" : "▶️") {
-          if #available(iOS 14.0, *) {
-            self.isCounting.toggle()
-          } else {
-            CountDownUp.commands.send("toggleIsCounting")
-          }
+        Button(action: {
+          isCounting.toggle()
+        }) {
+          Image(systemName: isCounting ? "pause.circle.fill" : "play.circle.fill")
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width: 100)
         }
-        Button(isReversed ? "🔽" : "🔼") {
-          if #available(iOS 14.0, *) {
-            self.isReversed.toggle()
-          } else {
-            CountDownUp.commands.send("toggleIsReversed")
-          }
+        Button(action: {
+          isReversed.toggle()
+        }) {
+          Image(systemName: isReversed ? "arrowshape.turn.up.right.circle.fill" : "arrowshape.turn.up.backward.2.circle.fill")
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .frame(width: 100)
         }
       }
       .frame(maxWidth: .infinity)
@@ -87,57 +89,35 @@ fileprivate struct CountModifier: AnimatableModifier {
   func body(content: Content) -> some View {
     if (isReversed && percentValue == 0) || (!isReversed && percentValue == 1) {
       DispatchQueue.main.async {
-        self.percentage = self.isReversed ? 1 : 0
-        withAnimation(.linear(duration: self.timeDuration)) {
-          self.percentage = self.isReversed ? 0 : 1
+        percentage = isReversed ? 1 : 0
+        withAnimation(.linear(duration: timeDuration)) {
+          percentage = isReversed ? 0 : 1
         }
       }
     }
-    //if #available(iOS 14.0, *) {
-    //  return AnyView(actualBody(content))
-    //} else {
-    //  return AnyView(actualBody13(content))
-    //}
-    return actualBody13(content)
+
+    return actualBody(content)
   }
   
-  //@available(iOS 14.0, *)
-  //func actualBody(_ content: Content) -> some View {
-  //  Text("\(value, specifier: "%03d")")
-  //  .font(.system(.largeTitle, design: .monospaced))
-  //  .font(.largeTitle)
-  //  .onChange(of: isCounting) { _ in
-  //    handleStartStop()
-  //  }
-  //  .onChange(of: isReversed) { _ in
-  //    handleReverse()
-  //  }
-  //}
-
-  @available(iOS 13.0, *)
-  func actualBody13(_ content: Content) -> some View {
-    Text("\(value, specifier: "%03d")")
-    .font(.system(.largeTitle, design: .monospaced))
-    .font(.largeTitle)
-    .onReceive(CountDownUp.commands) {
-      if $0 == "toggleIsCounting" {
-        self.isCounting.toggle()
-        self.handleStartStop()
-      } else if $0 == "toggleIsReversed" {
-        self.isReversed.toggle()
-        self.handleReverse()
-      }
+  func actualBody(_ content: Content) -> some View {
+    Text("\(value, specifier: "%d")")
+    .font(.system(size: 120.0, weight: .bold, design: .monospaced))
+    .onChange(of: isCounting) { _ in
+      handleStartStop()
+    }
+    .onChange(of: isReversed) { _ in
+      handleReverse()
     }
   }
 
   func handleStartStop() -> () {
     if isCounting {
       withAnimation(.linear(duration: timeRemaining)) {
-        self.percentage = isReversed ? 0 : 1
+        percentage = isReversed ? 0 : 1
       }
     } else {
       withAnimation(.linear(duration: 0)) {
-        self.percentage = percentValue
+        percentage = percentValue
       }
     }
   }
@@ -145,10 +125,10 @@ fileprivate struct CountModifier: AnimatableModifier {
   func handleReverse() -> () {
     if isCounting {
       withAnimation(.linear(duration: 0)) {
-        self.percentage = percentValue
+        percentage = percentValue
       }
       withAnimation(.linear(duration: timeRemaining)) {
-        self.percentage = isReversed ? 0 : 1
+        percentage = isReversed ? 0 : 1
       }
     }
   }

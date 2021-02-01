@@ -62,7 +62,7 @@ public struct Example: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Example_Previews: PreviewProvider {
   static var previews: some View {
     Example(.faveDishes)
   }
