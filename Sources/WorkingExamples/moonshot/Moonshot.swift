@@ -1,5 +1,3 @@
-#if os(iOS)
-
 import SwiftUI
 
 struct Moonshot: View {
@@ -93,5 +91,3 @@ struct Moonshot_Previews: PreviewProvider {
     Moonshot()
   }
 }
-
-#endif

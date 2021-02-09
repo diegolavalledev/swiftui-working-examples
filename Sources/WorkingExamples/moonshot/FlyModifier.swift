@@ -1,5 +1,3 @@
-#if os(iOS)
-
 import SwiftUI
 
 struct FlyModifier: AnimatableModifier {
@@ -47,5 +45,3 @@ struct FlyModifier_Previews: PreviewProvider {
     .previewLayout(.sizeThatFits)
   }
 }
-
-#endif
