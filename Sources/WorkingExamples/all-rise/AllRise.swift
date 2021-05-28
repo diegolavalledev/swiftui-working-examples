@@ -1,12 +1,40 @@
 #if os(iOS)
 
 import SwiftUI
+import Foundation
+import UIKit
+import CoreGraphics
+import Combine
+
+fileprivate class KeyboardProperties: ObservableObject {
+  
+  static let shared = KeyboardProperties()
+  
+  @Published var frame = CGRect.zero
+
+  var subscription: Cancellable?
+
+  init() {
+    subscription = NotificationCenter.default
+    .publisher(for: UIResponder.keyboardDidShowNotification)
+    .compactMap { $0.userInfo }
+    .compactMap {
+      $0[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
+    }
+    .merge(
+      with: NotificationCenter.default.publisher(for: UIResponder.keyboardDidHideNotification).map { _ in
+        CGRect.zero
+      }
+    )
+    .assign(to: \.frame, on: self)
+  }
+}
 
 struct AllRise: View {
   
   @State var textValue = ""
 
-  @ObservedObject var keyboardProps = KeyboardProperties.shared
+  @ObservedObject private var keyboardProps = KeyboardProperties.shared
   
   var kbHeight: CGFloat {
     keyboardProps.frame.height

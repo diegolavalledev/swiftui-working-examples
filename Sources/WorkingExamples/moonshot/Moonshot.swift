@@ -70,7 +70,7 @@ struct Moonshot: View {
         moon
         bluePlane
         .modifier(
-          FlyModifier(
+          Moonshot_FlyModifier(
             totalDistance: Self.totalDistance,
             percentage: percentage
           ) {

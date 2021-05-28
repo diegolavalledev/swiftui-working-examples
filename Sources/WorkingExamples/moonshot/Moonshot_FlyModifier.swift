@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct FlyModifier: AnimatableModifier {
+struct Moonshot_FlyModifier: AnimatableModifier {
 
   var totalDistance: CGFloat
   var percentage: CGFloat
@@ -38,7 +38,7 @@ struct FlyModifier_Previews: PreviewProvider {
       Image(systemName: "paperplane")
       .foregroundColor(.green)
       .modifier(
-        FlyModifier(totalDistance: 50, percentage: 1)
+        Moonshot_FlyModifier(totalDistance: 50, percentage: 1)
       )
     }
     .frame(width: 100, height: 100, alignment: .bottomLeading)

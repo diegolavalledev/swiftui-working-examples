@@ -15,6 +15,7 @@ public struct Example: View {
     case moonshot = "moonshot"
     case faveDishes = "fave-dishes"
     case loopyCarousel = "loopy-carousel"
+    case spaceAnts = "space-ants"
   }
 
   let name: Name
@@ -55,6 +56,8 @@ public struct Example: View {
         FaveDishes()
       case .loopyCarousel:
         LoopyCarousel()
+      case .spaceAnts:
+        SpaceAnts()
     }
   }
 }
