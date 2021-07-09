@@ -16,6 +16,8 @@ public struct Example: View {
     case faveDishes = "fave-dishes"
     case loopyCarousel = "loopy-carousel"
     case spaceAnts = "space-ants"
+    case rotateThis = "rotate-this"
+    case tomatoTimer = "tomato-timer"
   }
 
   let name: Name
@@ -58,6 +60,10 @@ public struct Example: View {
         LoopyCarousel()
       case .spaceAnts:
         SpaceAnts()
+      case .rotateThis:
+        RotateThis()
+      case .tomatoTimer:
+        TomatoTimer()
     }
   }
 }
